@@ -114,7 +114,7 @@ module.exports = {
   },
   buildDir: resolve(__dirname, '../public'),
   build: {
-    publicPath:'https://konglingwen94.github.io/egg-nuxt-blog/docs/_nuxt',
+    publicPath:'./_nuxt/',
     // devtools: true,
     babel: {
       plugins: [

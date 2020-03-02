@@ -15,7 +15,7 @@ public
 # chore files
 node_modules
 app/public
-.nuxt
+/web/.nuxt
 /run 
 
 #logs files
