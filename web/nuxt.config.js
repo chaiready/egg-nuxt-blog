@@ -112,10 +112,13 @@ module.exports = {
     //   '/users/3'
     // ]
   },
+  router:{
+    // base:'/docs/'
+  },
   buildDir: resolve(__dirname, '../public'),
   build: {
-    publicPath:'egg-nuxt-blog/_nuxt/',
-    // devtools: true,
+    // publicPath:'/',
+    devtools: true,
     babel: {
       plugins: [
         [
