@@ -113,7 +113,7 @@ module.exports = {
     // ]
   },
   router:{
-    // base:'/docs/'
+    base:'/egg-nuxt-blog/'
   },
   buildDir: resolve(__dirname, '../public'),
   build: {
