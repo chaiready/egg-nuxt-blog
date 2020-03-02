@@ -3,16 +3,16 @@
     <div class="header-content">
       <el-menu :default-active="$route.path" mode="horizontal">
         <el-menu-item index="/">
-          <a href="/">博客</a>
+          <a href="./">博客</a>
         </el-menu-item>
         <el-menu-item index="/aboutus">
-          <a href="/aboutus">关于</a>
+          <a href="./aboutus">关于</a>
         </el-menu-item>
         <el-menu-item index="/folders">
-          <a href="/folders">归档</a>
+          <a href="./folders">归档</a>
         </el-menu-item>
         <el-menu-item index="/messages">
-          <a href="/messages">留言墙</a>
+          <a href="./messages">留言墙</a>
         </el-menu-item>
         <!-- <el-menu-item index="/favorites">我的收藏</el-menu-item> -->
       </el-menu>
