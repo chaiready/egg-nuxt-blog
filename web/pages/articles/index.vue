@@ -19,11 +19,7 @@ import CategoryService from '@/services/categories'
 import ArticleService from '@/services/articles'
 export default {
   layout: 'public',
-  asyncData(context) {
-   
-    return context.payload
-  },
-  async validate(context) {
+  async asyncData(context) {
      
     const { categoryID, tagID } = context.query
     let articleAction, archiveAction
@@ -46,25 +42,20 @@ export default {
       return { archiveData: {}, dataList: [] }
     }
 
-    context.payload = { dataList, archiveData }
+    return { dataList, archiveData }
 
 
 
-    if(dataList.length){
-      }
-      return true
+    
 
     
 
     // debugger
   },
+head:{
 
-  // beforeDestroy(){
-  //   console.log('before-destroy')
-  // },
-  // destroyed(){
-  //   console.log('destroyed')
-  // },
+  title:'文章',
+},
   computed: {
     bannerStyle() {
       const style = {}

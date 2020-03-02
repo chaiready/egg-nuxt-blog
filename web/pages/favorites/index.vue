@@ -9,23 +9,25 @@
 import ArticleService from '@/services/articles'
 export default {
   layout: 'public',
-  async created() {
-    const idList = this.$store.state.article.starIdList
+  async asyncData({store}) {
+    const idList = store.state.article.starIdList
     // console.log(store)
+      console.log(store.state.article)
 
     if (!idList.length) {
       return
     }
 
     try {
-      this.dataList = await ArticleService.fetchList({ idList })
+      var dataList = await ArticleService.fetchList({ idList })
     } catch (error) {
-      this.dataList = []
+      dataList = []
     }
+    return{ dataList}
   },
   data() {
     return {
-      dataList: []
+      // dataList: []
     }
   }
 }

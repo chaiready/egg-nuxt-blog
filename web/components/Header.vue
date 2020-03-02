@@ -1,9 +1,7 @@
 <template>
   <div class="header">
     <div class="header-content">
-      <!-- <div class="theme-mode-wrapper">
-        <a href="javascript:;">theme-mode</a>
-      </div>-->
+     
 
       <el-menu router :default-active="$route.path" mode="horizontal">
         <el-menu-item index="/">博客</el-menu-item>
@@ -45,8 +43,7 @@ export default {
   justify-content: space-around;
   align-items: center;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-  // padding-left: 100px;
-  // padding-right:40px;
+ 
 }
 .header-content {
   display: flex;
@@ -63,9 +60,13 @@ export default {
   font-size: 12px !important;
 
   }
-  /deep/ #header {
-    display: none;
-  }
+  
 }
 </style>
+<style>
+.weather-container .weather #header{
+  display:none;
+}
+</style>
+
 

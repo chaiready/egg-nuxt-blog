@@ -13,7 +13,7 @@
           <el-tag size="small" v-for="(item,index) in data.tagList" :key="index">{{item.name}}</el-tag>
         </div>
         <div class="right">
-          <time>{{new Date(data.createdAt).toLocaleString()}}</time>
+          <time>{{new Date(data.createdAt).toLocaleDateString()}}</time>
           <i class="el-icon-view">
             <span>{{data.pv}}</span>
           </i>

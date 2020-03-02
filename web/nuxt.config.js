@@ -48,7 +48,6 @@ module.exports = {
     },
   },
 
-   
   /*
    ** Customize the progress-bar color
    */
@@ -106,16 +105,16 @@ module.exports = {
    */
 
   generate: {
-    dir: resolve(__dirname, '../public/web-static'),
+    dir: process.env.buildDir || resolve(__dirname, '../docs'),
     // routes: [
     //   '/users/1',
     //   '/users/2',
     //   '/users/3'
     // ]
   },
-  buildDir: resolve(__dirname, '../public/web'),
+  buildDir: resolve(__dirname, '../public'),
   build: {
-    // publicPath:'/web-static',
+    publicPath:'https://konglingwen94.github.io/egg-nuxt-blog/_nuxt',
     // devtools: true,
     babel: {
       plugins: [

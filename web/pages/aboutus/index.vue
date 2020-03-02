@@ -58,6 +58,9 @@ import _ from 'lodash'
 export default {
   name: 'Aboutus',
   layout: 'public',
+  head:{
+    title:'关于'
+  },
   computed: {
     profile() {
       return this.$store.state.configuration.profile

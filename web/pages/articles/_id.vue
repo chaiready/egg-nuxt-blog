@@ -28,9 +28,9 @@
         <nuxt-link
           :to="{name:'articles',query:{tagID:item.id}}"
           v-for="(item,key) in data.tagList"
-          :key="key"
+          :key="key"  class="tag-item"
         >
-          <span class="tag-item">{{item.name}}</span>
+          <span>{{item.name}}{{key+1===data.tagList.length?'':'、'}}</span>
         </nuxt-link>
       </div>
 
