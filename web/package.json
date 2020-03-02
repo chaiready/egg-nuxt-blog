@@ -10,7 +10,7 @@
     "debug": "nuxt --inspect=9999",
     "build": "cross-env NODE_ENV=production  nuxt build",
     "start": "nuxt start  ../public/web",
-    "generate": " nuxt generate"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "axios": "^0.19.0",

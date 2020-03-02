@@ -17,7 +17,9 @@
     "web:start": "cd web && npm run start",
     "web:dev:spa": "cd web && npm run dev:spa",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "push:master":" git add . && git commit -m \"Generate static files\" && git push origin master"
+
   },
   "repository": {
     "type": "git",
